@@ -9,7 +9,7 @@ $(document).ready(function () {
     $("header").removeClass("toggle");
 
     if ($(window).scrollTop() > 0) {
-      $('.top').show();
+      $(".top").show();
     } else {
       $(".top").hide();
     }
@@ -17,12 +17,12 @@ $(document).ready(function () {
 
   $('a[href*="#"]').on("click", function (e) {
     e.preventDefault();
-    $('html, body').animate(
+    $("html, body").animate(
       {
-        scrollTop: $($(this).attr('href')).offset().top,
+        scrollTop: $($(this).attr("href")).offset().top,
       },
       500,
-      'linear'
+      "linear"
     );
   });
 });
